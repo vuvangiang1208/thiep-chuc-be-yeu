@@ -14,7 +14,7 @@ Dẫu mai này thế giới đổi thay, anh hứa luôn là điểm tựa vữn
 
 export default function App() {
   const [bgImage] = useState(() => {
-    return localStorage.getItem("romantic_bg_image") || "/src/assets/images/khanh-chi-tran.jpg";
+    return "/src/assets/images/khanh-chi-tran.jpg";
   });
 
   const [letterTitle, setLetterTitle] = useState(() => {
