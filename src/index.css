@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Playfair Display", serif;
+  --font-cursive: "Dancing Script", cursive;
+  --font-calligraphy: "Great Vibes", cursive;
+  
+  --color-rose-gold: #f5dfd5;
+  --color-soft-rose: #fbcfe8;
+  --color-deep-rose: #db2777;
+  --color-champagne: #faf6f0;
+}
+
+/* Custom romantic premium animations */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes float-slow {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(-1.5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 14s ease-in-out infinite;
+}
+
+.animate-sway {
+  animation: sway 6s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 3s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Elegant editorial backdrop */
+body {
+  background-color: #fdfbf9;
+  background-image: radial-gradient(#f7eae4 1.2px, transparent 1.2px);
+  background-size: 32px 32px;
+  font-family: var(--font-sans);
+  color: #292524;
+  overflow-x: hidden;
+}
+
+/* Custom luxury scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fdfbf9;
+}
+::-webkit-scrollbar-thumb {
+  background: #f1d3c7;
+  border-radius: 999px;
+  border: 2px solid #fdfbf9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e3b0a0;
+}
