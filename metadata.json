@@ -1,0 +1,6 @@
+{
+  "name": "Khánh Chi's Sweet Oasis",
+  "description": "Một góc nhỏ bình yên, ngọt ngào và lãng mạn chứa đựng những lời chúc ý nghĩa của cả gia đình dành tặng cho Trần Khánh Chi - bé iu 25 tuổi nhân ngày 01/06.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
